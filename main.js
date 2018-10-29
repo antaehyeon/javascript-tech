@@ -4,7 +4,11 @@ const secondBanner = document.querySelector('.banner2');
 
 const firstBtn = document.querySelector('.btn-1');
 const secondBtn = document.querySelector('.btn-2');
+const thirdBtn = document.querySelector('.btn-3');
 
+let start = null;
+
+// Transition
 firstBtn.addEventListener('click', () => {
     // firstBanner.style.backgroundColor = 'BLACK';
     // secondBanner.style.backgroundColor = 'BLACK';
@@ -19,9 +23,23 @@ secondBtn.addEventListener('click', () => {
     secondBanner.style.opacity = 1;
 });
 
-document.querySelector('.banner2').addEventListener('click', () => {
-    console.log('Click Event!')
-    secondBanner.style.backgroundColor = 'BLACK';
+// request Animation Frame
+thirdBtn.addEventListener('click', () => {
+
+    window.requestAnimationFrame(step);
+
 });
+
+function step(timestamp) {
+    if (!start) start = timestamp;
+
+    var progress = timestamp - start;
+
+    secondBanner.style.left = Math.min(progress / 10, 200) + 'px';
+
+    if (progress < 2000) {
+        window.requestAnimationFrame(step);
+    }
+}
 
 console.log("SUCCESS JS");
