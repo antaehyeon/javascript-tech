@@ -1,0 +1,22 @@
+/* 1. Transition Property */
+.parent {
+    position: relative;
+}
+
+.banner {
+    position: absolute;
+    width: 600px; height: 200px;
+    background-color:white;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.banner2 {
+    position: absolute;
+    width: 600px; height: 200px;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px pink;
+    transition: all 1s;
+}
+
