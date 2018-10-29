@@ -9,6 +9,8 @@
     background-color:white;
     border: 1px solid black;
     box-shadow: 5px 5px 5px gray;
+    display: inline-block;
+    transition: all 1s;
 }
 
 .banner2 {
@@ -17,6 +19,7 @@
     background-color: white;
     border: 1px solid black;
     box-shadow: 5px 5px 5px pink;
+    display: inline-block;
     transition: all 1s;
 }
 
