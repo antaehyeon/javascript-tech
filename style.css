@@ -1,25 +1,34 @@
 /* 1. Transition Property */
 .parent {
-    position: relative;
+  position: relative;
 }
 
 .banner {
-    position: absolute;
-    width: 600px; height: 200px;
-    background-color:white;
-    border: 1px solid black;
-    box-shadow: 5px 5px 5px gray;
-    display: inline-block;
-    transition: all 1s;
+  position: absolute;
+  width: 600px;
+  height: 200px;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px gray;
+  display: inline-block;
+  transition: all 1s;
 }
 
 .banner2 {
-    position: absolute;
-    width: 600px; height: 200px;
-    background-color: white;
-    border: 1px solid black;
-    box-shadow: 5px 5px 5px pink;
-    display: inline-block;
-    transition: all 1s;
+  position: absolute;
+  width: 600px;
+  height: 200px;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px pink;
+  display: inline-block;
+  transition: all 1s;
 }
 
+.banner1-active {
+  opacity: 0;
+}
+
+.banner2-active {
+  opacity: 0;
+}
