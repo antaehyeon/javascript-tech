@@ -36,6 +36,8 @@ function step(timestamp) {
     var progress = timestamp - start;
 
     secondBanner.style.left = Math.min(progress / 10, 200) + 'px';
+    console.log(secondBanner.style.left);
+    console.log("PROGRESS : " + progress);
 
     if (progress < 2000) {
         window.requestAnimationFrame(step);
